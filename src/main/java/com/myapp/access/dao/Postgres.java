@@ -10,11 +10,7 @@ public class Postgres {
    public static void main( String args[] ) {
       Connection c = null;
       Statement stmt = null;
-              int target = -5;
-        int num = 3;
 
-        target =- num;  // Noncompliant; target = -3. Is that really what's meant?
-        target =+ num; // Noncompliant; target = 3
       try {
          //Class.forName("org.postgresql.Driver");
          c = DriverManager
