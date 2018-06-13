@@ -11,10 +11,6 @@ public class Postgres {
       Connection c = null;
       Statement stmt = null;
 
-	int target = -5;
-        int num = 3;
-        target =- num;  // Noncompliant; target = -3. Is that really what's meant?
-
       try {
          //Class.forName("org.postgresql.Driver");
          c = DriverManager
